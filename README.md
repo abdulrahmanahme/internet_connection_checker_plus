@@ -1,4 +1,4 @@
-# For from Internet Connection Checker Plus
+# Fork from Internet Connection Checker Plus
 This is a fork from Internet Connection Checker Plus
 But there are a little difference  between this package and my fork
 
