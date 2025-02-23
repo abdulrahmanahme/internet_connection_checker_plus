@@ -91,16 +91,18 @@ class InternetConnection {
   }
 
   /// The default check interval duration.
-  static const _defaultCheckInterval = Duration(seconds: 10);
+  static const _defaultCheckInterval = Duration(seconds: 40);
 
   /// The default list of [Uri]s used for checking internet reachability.
   final List<InternetCheckOption> _defaultCheckOptions = [
-    InternetCheckOption(uri: Uri.parse('https://one.one.one.one')),
-    InternetCheckOption(uri: Uri.parse('https://icanhazip.com/')),
     InternetCheckOption(
-      uri: Uri.parse('https://jsonplaceholder.typicode.com/todos/1'),
+      uri: Uri.parse('https://www.google.com/'),
+      timeout: Duration(seconds: 20),
     ),
-    InternetCheckOption(uri: Uri.parse('https://reqres.in/api/users/1')),
+    InternetCheckOption(
+      uri: Uri.parse('https://www.cloudflare.com/'),
+      timeout: Duration(seconds: 20),
+    ),
   ];
 
   /// The list of [Uri]s used for checking internet reachability.
